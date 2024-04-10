@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +38,22 @@ margin: 0;
     environment: 'prod-cac1',
     deploymentId: '0ef0298f-84ac-466b-8e7d-e50aab45bd70'
   });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  Genesys("subscribe", "Launcher.ready" , function(o){
+    console.log("success");
+  });
+</script>
+
+<script>
+    Genesys("command", "Database.set", {
+  messaging: {
+    customAttributes: {
+      name: "Jamie Miller"
+    }
+  }
+});
 </script>
 </body>
 </html>
