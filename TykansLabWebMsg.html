@@ -12,3 +12,19 @@
     deploymentId: '2500a267-02f1-4e72-992f-e28a2fe34a7e'
   });
 </script>
+
+<script type="text/javascript" charset="utf-8">
+  Genesys("subscribe", "Launcher.ready" , function(o){
+    console.log("success");
+  });
+</script>
+
+<script>
+    Genesys("command", "Database.set", {
+  messaging: {
+    customAttributes: {
+      name: "Russel Motha"
+    }
+  }
+});
+</script>
