@@ -1,20 +1,4 @@
 <script type="text/javascript" charset="utf-8">
-  Genesys("subscribe", "Launcher.ready" , function(o){
-    console.log("success");
-  });
-</script>
-
-<script>
-    Genesys("command", "Database.set", {
-  messaging: {
-    customAttributes: {
-      name: "Russell Motha"
-    }
-  }
-});
-</script>
-
-<script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
     g[e] = g[e] || function () {
@@ -29,4 +13,18 @@
   });
 </script>
 
+<script type="text/javascript" charset="utf-8">
+  Genesys("subscribe", "Messenger.ready" , function(o){
+    console.log("success");
+  });
+</script>
 
+<script>
+    Genesys("command", "Database.set", {
+  messaging: {
+    customAttributes: {
+      name: "Russell Motha"
+    }
+  }
+});
+</script>
